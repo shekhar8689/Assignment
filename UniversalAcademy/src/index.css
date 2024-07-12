@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+  
+
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+html {
+  font-family: "Satoshi", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-family: 'Satoshi';
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 68px;
+  letter-spacing: 5%;
+  color: #191970;
+}
+
+h2 {
+  font-family: 'Satoshi';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  color: #181972;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Satoshi';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+p {
+  font-family: 'Satoshi';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.vr {
+  opacity: 1;
+  width: 2px;
+  color: #181972;
+}
+
+button.btn {
+  background-color: #181972;
+  border-radius: 27.08px;
+  padding: 10px 24px;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+button.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+input.btn {
+  background-color: #181972;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 1565px;
+}
+
+form {
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  box-shadow: 0px 4px 4px 0px #DEF0FF;
+  width: 430px;
+}
+
+form .form-heading {
+  background-color: #FDDF49;
+  border-radius: 17px 17px 0px 0px;
+}
+
+form .form-heading h2 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+form .acadmic-year button.btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+form .form-fields {
+  padding: 32px;
+}
+
+
+form .your-relationship {
+  margin-top: 14px;
+}
+
+form .your-relationship .border {
+  border-radius: 3.31px 0px 0px 3.31px;
+  border: 0.83px solid #DADADA
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]+label {
+  /* z-index: 10; */
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+input[type="radio"]:checked+label {
+  color: #fff;
+  background-color: #292967;
+}
+
+input[type="radio"]+label {
+  padding: 10px 32px;
+}
+
+.form-control {
+  border: 0.83px solid #DADADA;
+  font-family: 'Satoshi';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.iti {
+  width: 100%;
+}
+
+.form-label {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.form-select {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+input[type="radio"]:checked+label {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+input[type="radio"]+label {
+  font-family: 'Satoshi';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+form .parents {
+  position: absolute;
+  padding: 7px 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+form .mr-miss .form-control {
+  padding-left: 60px;
+}
+
+form .mr-miss .parents select {
+  border: 0;
+}
+
+

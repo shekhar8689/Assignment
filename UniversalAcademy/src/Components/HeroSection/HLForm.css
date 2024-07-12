@@ -1,0 +1,38 @@
+.enquiry-form {
+    Width: 440.09px;
+    height:auto;
+    border-radius: 20px  20px  20px 20px;
+    background-color: #FFFF;
+    box-shadow: 0px 4px 4px 0px #DEF0FF;
+    margin: 10px;
+    
+
+}
+
+.enquiry-form-title {
+    color: #292967;
+    background-color: #FDDF49;
+    border-radius: 20px  20px  0px 0px;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+
+.Your-rel-chd{
+    font-size: 12px;
+}
+
+.form-containt{
+    padding: 0px 8px 0px 8px;
+}
+
+.Form-Enq-button{
+    position: relative;
+    top: 0;
+    left: 23%;
+    padding-bottom: 12px;
+}

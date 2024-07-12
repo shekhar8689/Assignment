@@ -1,0 +1,52 @@
+.our-compuses .our-compuses-banner {
+    background-image: url('../../Assets/ourcampusesbckgrnd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300.62px;
+  }
+  
+  .our-compuses .container {
+    max-width: 1320px;
+    margin-top: -218px;
+  }
+  
+  .our-compuses .container h3.subtext {
+    color: #fff;
+  }
+  
+  .our-compuses .container h2 {
+    color: #FDDF49;
+  }
+  
+  .our-compuses .container .row.heading .col-md-6 {
+    padding: 0 35px;
+  }
+
+  @media only screen and (max-width: 767px){
+
+    .our-compuses-heading-left-col {
+        display: none !important;
+      }
+    
+      .our-compuses-bottom-left-col {
+        display: block !important;
+        margin-bottom: 20px;
+      }
+    
+      .our-compuses-bottom-left-col button {
+        margin: 0 auto;
+      }
+    
+      .our-compuses .container .row.heading .col-md-6 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .our-compuses .our-compuses-banner {
+        min-height: 240.62px;
+      }
+    
+
+  }

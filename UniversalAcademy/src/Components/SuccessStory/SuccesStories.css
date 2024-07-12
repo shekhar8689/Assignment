@@ -1,0 +1,28 @@
+.success-stories .container {
+    max-width: 1320px;
+  }
+  
+  .success-stories .row .col-md-6 {
+    padding: 0 35px;
+  }
+  
+ 
+  @media only screen and (max-width: 767px) {
+  .success-stores .row .col-md-6 button {
+    display: none !important;
+  }
+
+  .success-stores-bottom-section-right-col {
+    margin-bottom: 20px;
+    display: block !important;
+  }
+
+  .success-stores-bottom-section-right-col button {
+    margin: 0 auto;
+  }
+
+  .success-stores .row .col-md-6 {
+    text-align: center;
+  }
+
+}

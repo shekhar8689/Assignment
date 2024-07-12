@@ -1,0 +1,32 @@
+.learning-approach {
+    background-image: url(../../Assets/LABackgroundImg.png);
+    /* src: url(../../Assets/LABackgroundImg.png); */
+    width: 90%;
+    height: auto;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #292967;
+    color: #FFFFFF;
+    border-radius: 25px;
+    position: absolute;
+    top: 126%;
+    left: 5%;
+}
+
+.learning-approach h3{
+    color: white;
+    text-align: center;
+}
+
+.learning-approach h2{
+    color: #FDDF49;
+    text-align: center;
+}
+
+.learning-approach-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: orange;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

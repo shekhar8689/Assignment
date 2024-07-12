@@ -1,0 +1,57 @@
+.Hero-left-containt {
+    position: absolute;
+    left: 120px;
+    top: 160px;
+}
+
+.Hero-left-containt-title {
+    color: #191970;
+    text-align: center;
+}
+
+.Main-title {
+    font-family: Satoshi;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 67.5px;
+    text-align: left;
+
+}
+
+.hero-left-pace-logo img {
+    height: 60px;
+    width: 110px;
+}
+
+.Hero-left-containt-secondContaint {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Hero-left-containt-lastContaint img {
+    height: 47px;
+    width: 47px;
+}
+
+.Hero-left-containt-lastContaint p {
+    width: 150px;
+    padding-left: 4px;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.3px;
+    text-align: left;
+    color: black;
+
+}
+
+.Hero-left-containt-lastContaint-one {
+    display: flex;
+    gap: 4px;
+}
+
+.Hero-left-containt-lastContaint-two {
+    display: flex;
+    gap: 4px;
+}
