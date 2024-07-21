@@ -1,13 +1,68 @@
-.success-stories .container {
-    max-width: 1320px;
+
+.success-story-main-contain{
+  width: 80%;
+  margin: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.success-story-heading{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-stories-carousel{
+  display: flex;
+  justify-content: center;
+  background-color: violet;
+  padding-bottom: 10px;
+}
+
+.success-stories-carousel-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: brown;
+}
+
+.all-img-containts{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.carousel-img-fluid{
+  height: 260px;
+  width: 270px;
+}
+
+.success-story-main-contain .carousel-control-next {
+  display: none;
+}
+
+.success-story-main-contain .carousel-indicators{
+  button{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #D9D9D9;
   }
-  
-  .success-stories .row .col-md-6 {
-    padding: 0 35px;
+
+  button.active{
+    width: 10px;
+    height: 10px;
+    background-color: #292967;
   }
-  
- 
-  @media only screen and (max-width: 767px) {
+}
+
+.success-story-main-contain .carousel-control-prev {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
   .success-stores .row .col-md-6 button {
     display: none !important;
   }

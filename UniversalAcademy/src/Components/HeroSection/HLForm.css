@@ -1,38 +1,57 @@
-.enquiry-form {
-    Width: 440.09px;
-    height:auto;
-    border-radius: 20px  20px  20px 20px;
-    background-color: #FFFF;
+
+.HLForm-main{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 358px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 17px;
     box-shadow: 0px 4px 4px 0px #DEF0FF;
-    margin: 10px;
+}
+
+.HLForm-main-containt {
+
+    Width: 330px;
+    margin: 14px;
+    background-color: transparent;
     
-
 }
 
-.enquiry-form-title {
-    color: #292967;
-    background-color: #FDDF49;
-    border-radius: 20px  20px  0px 0px;
-    font-family: Satoshi;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27px;
+.HLForm-title {
+    background: #FDDF49;
+    border-radius: 17px 17px 0px 0px;
     text-align: center;
-    padding: 10px 0px;
-
+    padding: 10px 0;
 }
 
-.Your-rel-chd{
-    font-size: 12px;
+.form-control-cal{
+    display: none;
 }
 
-.form-containt{
-    padding: 0px 8px 0px 8px;
+#academicYear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.Form-Enq-button{
-    position: relative;
-    top: 0;
-    left: 23%;
-    padding-bottom: 12px;
+.cal-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rel-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#relationship{
+    display: flex;
+    align-items: center;
+}
+
+.relationship-btns{
+    display: flex;
+    align-items: center;
 }

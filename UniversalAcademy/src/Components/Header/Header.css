@@ -8,19 +8,15 @@
     border-radius: 0px 0px 30px 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 38.2px -8px #00000026;
-    padding: 0px 10rem;
+    padding: 0px 3rem;
 }
 
-
-.Brand-flex{
-    display: flex;
-    gap: 20px;
-}
-
-.vr{
-    opacity: 1;
+.navbar-separator {
     width: 2px;
-    color: #181972;
+    height: 50px;
+    background-color: #181972; 
+    margin: 0 15px; 
     display: inline-block;
-    min-height: 2em;
-}
+    vertical-align: middle;
+  }
+

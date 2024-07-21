@@ -1,135 +1,159 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 import Button from '../../Button'
 import './HLForm.css'
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import Row from 'react-bootstrap/Row';
-import Dropdown from 'react-bootstrap/Dropdown';
-import InputGroup from 'react-bootstrap/InputGroup';
-import SplitButton from 'react-bootstrap/SplitButton';
-import Container from 'react-bootstrap/Container';
 
 
 function HLForm() {
+
+    const [selectedYear, setSelectedYear] = useState(null);
+    const [isPickerOpen, setIsPickerOpen] = useState(false);
+
+    // const [showDatePicker, setShowDatePicker] = useState(false);
+    // const datePickerRef = useRef(null);
+    // const [startDate, setStartDate] = useState(new Date());
+    // const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
+
+    // const dateBtnClick = () => {
+    //     setShowDatePicker(true);
+    //     if (datePickerRef.current) {
+    //         datePickerRef.current.setFocus();
+    //     }
+    // };
+
+    // const handleDateChange = (date) => {
+    //     setStartDate(date);
+    //     setSelectedYear(date.getFullYear());
+    //     setShowDatePicker(false);
+    // };
+
+
+    const handleYearChange = (date) => {
+        setSelectedYear(date);
+        setIsPickerOpen(false);
+    };
+
+    const handleButtonClick = () => {
+        setIsPickerOpen(true);
+    };
+
+
+
+    const [relationship, setRelationship] = useState('Father');
+
+    const handleRelationshipChange = (newRelationship) => {
+        setRelationship(newRelationship);
+    };
+
     return (
-        <section className="enquiry-form">
-            <h2 className='enquiry-form-title'>Enquire Now!</h2>
-            <Form className='form-containt'>
-                <Row className="mb-1">
-                    <Form.Group as={Col} controlId="acadmic-year">
-                        <Form.Label>Acadmic Year</Form.Label>
-                    </Form.Group>
+        <div className='HLForm-main'>
+            <h3 className='HLForm-title'>ENQUIRE NOW!</h3>
+            <Form className='HLForm-main-containt'>
 
-                    <Form.Group as={Col} controlId="formGridPassword">
-                        <Button style={{
-                            borderRadius: '5px', width: '240.49px',
-                            height: '45px'
-                        }} variant="primary" type="submit">
-                            Submit
-                        </Button>
-                    </Form.Group>
-                </Row>
-
-                <Container className="mt-2 mb-3">
-                    <Row className="align-items-center">
-                        <Col>
-                            <h7 className="Your-rel-chd">Your relationship with the child</h7>
-                        </Col>
-                        <Col className="d-flex justify-content-end">
-                            <Button style={{
-                                borderRadius: '5px', width: '110px',
-                                height: '45px',
-                            }} variant="primary" className="me-4">Father</Button>
-                            <Button style={{
-                                borderRadius: '5px', width: '110px',
-                                height: '45px'
-                            }} variant="secondary" className="me-4">Mother</Button>
-                        </Col>
-                    </Row>
-                </Container>
-
-
-
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridFirstName">
-                        <Form.Label>Child's First Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter First Name" />
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridLastName">
-                        <Form.Label>Child's Last Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Last Name" />
-                    </Form.Group>
-                </Row>
-
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridYourFirstName">
-                        <Form.Label>Your First Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter First Name" />
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridYourLastName">
-                        <Form.Label>Your Last Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Last Name" />
-                    </Form.Group>
-                </Row>
-
-                <Form.Group className="mb-3">
-                    <Form.Label>Course Applying For</Form.Label>
-                    <Form.Select>
-                        <option>Disabled select</option>
-                    </Form.Select>
-                </Form.Group>
-
-
-                <Form.Label>Mobile Number</Form.Label>
-                <InputGroup className="mb-3">
-                    <SplitButton
-                        variant="outline-secondary"
-                        title="+91"
-                        id="segmented-button-dropdown-1"
+                <Form.Group id="academicYear">
+                    <Form.Label>Academic Year</Form.Label>
+                    <Button
+                        className="cal-btn"
+                        onClick={handleButtonClick}
+                        style={{ borderRadius: '0px', width: '200px', height: '35px', padding: '7px 20px' }}
                     >
-                        <Dropdown.Item href="#">+9</Dropdown.Item>
-                        <Dropdown.Item href="#">+01</Dropdown.Item>
-                        <Dropdown.Item href="#">+85</Dropdown.Item>
-                        <Dropdown.Divider />
-                        <Dropdown.Item href="#">Separated link</Dropdown.Item>
-                    </SplitButton>
-                    <Form.Control aria-label="Text input with dropdown button" />
-                </InputGroup>
+                        {selectedYear ? selectedYear.getFullYear() : 'Select Year'}
+                    </Button>
 
-                <Form.Group className="mb-1 pb-4" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    {isPickerOpen && (
+                        <DatePicker
+                            selected={selectedYear}
+                            onChange={handleYearChange}
+                            showYearPicker
+                            dateFormat="yyyy"
+                            inline
+                        />
+                    )}
+                    
                 </Form.Group>
 
-                <div className='Form-Enq-button'>
-                <Button >Enquire Now</Button>
-                </div>
 
+            
+
+                <Form.Group id="relationship">
+                    <Form.Label>Your Relationship with the Child</Form.Label>
+                    <div className='relationship-btns'>
+                        <Button
+                            onClick={() => handleRelationshipChange('Father')}
+                            style={{
+                                borderRadius: '0px',
+                                width: '100px',
+                                height: '35px',
+                                backgroundColor: relationship === 'Father' ? '#292967' : 'white',
+                                color: relationship === 'Father' ? 'white' : 'black',
+                                borderColor: relationship === 'Father' ? '#292967' : '#292967'
+                            }}
+                            className="rel-btn"
+                        >
+                            Father
+                        </Button>
+                        <Button
+                            onClick={() => handleRelationshipChange('Mother')}
+                            style={{
+                                borderRadius: '0px',
+                                width: '100px',
+                                height: '35px',
+                                backgroundColor: relationship === 'Mother' ? '#292967' : 'white',
+                                color: relationship === 'Mother' ? 'white' : 'black',
+                                borderColor: relationship === 'Mother' ? '#292967' : '#292967'
+                            }}
+                            className="rel-btn"
+                        >
+                            Mother
+                        </Button>
+                    </div>
+                </Form.Group>
+
+                <Row>
+                    <Form.Group as={Col} controlId="childFirstName">
+                        <Form.Label>Child's First Name</Form.Label>
+                        <Form.Control type="text" placeholder="Type Here" />
+                    </Form.Group>
+                    <Form.Group as={Col} controlId="childLastName">
+                        <Form.Label>Child's Last Name</Form.Label>
+                        <Form.Control type="text" placeholder="Type Here" />
+                    </Form.Group>
+                </Row>
+                <Row>
+                    <Form.Group as={Col} controlId="yourFirstName">
+                        <Form.Label>Your First Name</Form.Label>
+                        <Form.Control type="text" placeholder="Type Here" />
+                    </Form.Group>
+                    <Form.Group as={Col} controlId="yourLastName">
+                        <Form.Label>Your Last Name</Form.Label>
+                        <Form.Control type="text" placeholder="Type Here" />
+                    </Form.Group>
+                </Row>
+                <Form.Group controlId="courseApplyingFor">
+                    <Form.Label>Course Applying For</Form.Label>
+                    <Form.Control as="select">
+                        <option>Choose Course</option>
+                        {/* Add more options as needed */}
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group controlId="mobileNumber">
+                    <Form.Label>Mobile Number</Form.Label>
+                    <Form.Control type="text" placeholder="+91 Enter your Mobile Number" />
+                </Form.Group>
+                <Form.Group controlId="emailAddress">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control type="email" placeholder="yourname@example.com" />
+                </Form.Group>
+                <Button style={{margin:'3%', marginBottom:'3%', marginLeft:'20%'}}>
+                Enquire Now
+                </Button>
             </Form>
-        </section>
-    )
+        </div>
+    );
 }
 
-export default HLForm
-
-{/* <form>
-                <div className='acadmic-year'>
-                    <h5 className='acadmic-year-text'>Acadmic Year</h5>
-                    <input type="text" value={2024-2025} name='AcadmicYear' />
-                </div>
-                <div>
-                    <label htmlFor="childfirstname" className='child-first-name-label'>
-                        Child's First Name
-                    </label>
-                    <input type="text" className='child-first-name-input' id='child-first-name-input' placeholder='First Name' required />
-                </div>
-                <div>
-                    <label htmlFor="childlastname" className='child-last-name-label'>
-                        Child's Last Name
-                    </label>
-                    <input type="text" className='child-last-name-input' id='child-last -name-input' placeholder='First Name' required />
-                </div>
-                <Button>Enquire Now</Button>
-            </form> */}
+export default HLForm;

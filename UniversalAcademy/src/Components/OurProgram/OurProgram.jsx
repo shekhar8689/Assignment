@@ -1,6 +1,7 @@
 import React from 'react'
 import './OurProgram.css';
 import Button from '../../Button.jsx';
+import pbutton from '../../Assets/RightArrowLogo.png'
 
 const OurProgram = () => {
   return (
@@ -24,7 +25,7 @@ const OurProgram = () => {
                             preparations during school hours.
                         </p>
                         <div className="d-flex justify-content-center">
-                        <Button logo>Enquire Now</Button>
+                        <Button icon={pbutton}>Enquire Now</Button>
                         </div>
                     </div>
                 </div>
@@ -43,7 +44,7 @@ const OurProgram = () => {
                             NEET exam preparations during school hours
                         </p>
                         <div className="d-flex justify-content-center">
-                        <Button logo>Enquire Now</Button>
+                        <Button icon={pbutton}>Enquire Now</Button>
                         </div>
                     </div>
                 </div>

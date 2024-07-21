@@ -1,7 +1,14 @@
+.LA-Y-arrow{
+    position: absolute;
+    left: 49%;
+    transform: rotate(90deg);
+    top: 108%;
+    z-index: 99;
+}
 .learning-approach {
     background-image: url(../../Assets/LABackgroundImg.png);
     /* src: url(../../Assets/LABackgroundImg.png); */
-    width: 90%;
+    width: 93%;
     height: auto;
     gap: 0px;
     opacity: 0px;
@@ -9,11 +16,12 @@
     color: #FFFFFF;
     border-radius: 25px;
     position: absolute;
-    top: 126%;
-    left: 5%;
+    top: 110%;
+    left: 4%;
 }
 
 .learning-approach h3{
+    margin-top: 20px;
     color: white;
     text-align: center;
 }

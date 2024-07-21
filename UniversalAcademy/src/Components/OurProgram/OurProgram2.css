@@ -61,6 +61,12 @@
     background-color: #FDDF49;
   }
   
+  .our-prg-two-containt{
+    width: 93%;
+    margin-left: 4%;
+  }
+
+
   @media only screen and (max-width: 767px){
 
     .in-school-preparation .container .card .nav {

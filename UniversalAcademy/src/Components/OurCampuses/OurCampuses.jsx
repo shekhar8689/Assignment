@@ -1,6 +1,7 @@
 import React from 'react';
 import './OurCampuses.css';
 import Button from '../../Button.jsx';
+import bbutton from '../../Assets/arrow.png'
 import { Carousel } from 'react-bootstrap';
 import campus1 from '../../Assets/compusesimg-1.png';
 import campus2 from '../../Assets/compusesimg-2.png';
@@ -28,14 +29,14 @@ const OurCampuses = () => {
         <div className="container-fluid p-0">
           <div className="our-compuses-banner" />
         </div>
-        <div className="container">
-          <div className="row heading align-items-center">
+        <div className="container our-campus-main-containt">
+          <div className="row heading align-items-center our-campus-head-title">
             <div className="col-md-6">
               <h3 className="text-white">OUR</h3>
               <h2>CAMPUSES</h2>
             </div>
             <div className="col-md-6 our-compuses-heading-left-col d-flex justify-content-end">
-            <Button logo>Enquire Now</Button>
+            <Button icon={bbutton} style={{backgroundColor: '#FDDF49',color:'#292967'}}>Enquire Now</Button>
             </div>
           </div>
           

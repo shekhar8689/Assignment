@@ -1,6 +1,8 @@
 .learning-approach-item {
+    margin-left: 30px;
+    display: flex;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     height: auto;
     width: 205px;
     color: #ffffff;
@@ -16,4 +18,13 @@
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+}
+
+.learning-approach-separator{
+    width: 2px;
+    height: 140px;
+    margin-left: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 2px dashed #FFFF;
 }

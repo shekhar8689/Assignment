@@ -1,32 +1,40 @@
-.Hero-left-containt {
-    position: absolute;
-    left: 120px;
-    top: 160px;
+/* .Hero-left-containt{
+
+} */
+
+.Hero-carousel .carousel-indicators {
+    display: none;
 }
 
-.Hero-left-containt-title {
-    color: #191970;
-    text-align: center;
+.Hero-carousel .carousel-control-next {
+    display: none;
 }
 
-.Main-title {
-    font-family: Satoshi;
-    font-size: 43px;
-    font-weight: 500;
-    line-height: 67.5px;
-    text-align: left;
+.Hero-carousel .carousel-control-prev {
+    display: none;
+}
 
+.carousel-one-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-two-content{
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero-left-pace-logo img {
+    margin-left: 30%;
     height: 60px;
     width: 110px;
 }
 
 .Hero-left-containt-secondContaint {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 4px;
+    margin-top: 12px;
 }
 
 .Hero-left-containt-lastContaint img {
@@ -34,24 +42,85 @@
     width: 47px;
 }
 
-.Hero-left-containt-lastContaint p {
-    width: 150px;
-    padding-left: 4px;
-    font-family: Satoshi;
-    font-size: 18px;
+.Hero-carousel .main-img {
+    margin-top: 25%;
+    position: relative;
+    justify-content: right;
+    object-fit: fill;
+    Width: 440.73px;
+    height: 500px;
+}
+
+.leftL-one-para{
+    padding-left: 50px;
+    padding-top: 120px;
+}
+
+.second-title{
+    font-size: 1rem;
+    margin-left: 35%;
+    color: #181972;
+}
+
+.Hero-left-containt-secondContaint-text{
+    font-size: 1.3rem;
+}
+
+.Hero-left-containt-lastContaint-one{
+    display: flex;
+    align-items: center;
+    margin-right: 140px;
+}
+
+.Hero-left-containt-lastContaint-one p{
+    
+    font-size: 24px;
+    line-height: 20px;
+    color: #181972;
+    margin-top: 10px;
+}
+
+.Hero-left-containt-lastContaint-two{
+    display: flex;
+    align-items: center;
+    margin-right: 140px;
+}
+
+.Hero-left-containt-lastContaint-two p{
+    font-size: 24px;
+    line-height: 20px;
+    color: #181972;
+    margin-top: 10px;
+}
+
+.leftL-two-para{
+    padding-left: 50px;
+    padding-top: 120px;
+}
+
+.second-two-title{
+    display: flex;
+    align-items: center;
+    font-family: 'Satoshi';
+    font-size: 32px;
     font-weight: 700;
-    line-height: 24.3px;
-    text-align: left;
-    color: black;
-
+    line-height: 49px;
+    letter-spacing: 0em;
+    color: #181972;
 }
 
-.Hero-left-containt-lastContaint-one {
-    display: flex;
-    gap: 4px;
+.second-two-title h6 {
+    font-family: 'Satoshi';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    color: #181972;
 }
 
-.Hero-left-containt-lastContaint-two {
-    display: flex;
-    gap: 4px;
+
+.second-two-title img{
+    margin-left: 10px;
+    height: 50px;
+    width: 90px;
 }

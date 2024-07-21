@@ -1,8 +1,6 @@
-import RightArrowLogo from './Assets/RightArrowLogo.png'
-import iconOne from './Assets/LAIconOne.png';
 
 function button(props) {
-  const { children, style, onClick, logo } = props;
+  const { children, style,className, onClick, icon} = props;
 
   const defaultStyle = {
     backgroundColor: '#292967',
@@ -13,14 +11,15 @@ function button(props) {
     borderRadius: '50px',
     padding: '10px 20px',
     cursor: 'pointer',
+    margin:'',
     marginLeft:'',
-    marginBottom:''
+    marginBottom:'',
   };
   const combinedStyle = style ? { ...defaultStyle, ...style } : defaultStyle;
 
   return (
-    <button style={combinedStyle} onClick={onClick}> 
-       {children}{logo && <img src={RightArrowLogo} alt="logo" style={{ marginLeft: '23px', height: '27px',width:'27px' }} />} </button>
+    <button style={combinedStyle} className={className} onClick={onClick}> 
+       {children}{icon && <img src={icon} alt="icon" style={{ marginLeft: '23px', height: '27px',width:'27px' }} />} </button>
   )
 }
 

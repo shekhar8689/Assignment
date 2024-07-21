@@ -3,33 +3,24 @@ import './Header.css'
 import UHSLogo from '../../Assets/UHSLogo.png';
 import PaceLogo from '../../Assets/PaceLogo.png';
 import Button from '../../Button.jsx'
-import {Navbar, Container, Nav} from 'react-bootstrap'
+import { Navbar, Container, } from 'react-bootstrap'
 
 
 function Header() {
     return (
-
-            <Navbar expand="lg" className="header-navbar">
-            <Container className='header-navbar-con'>
-                <Navbar.Brand href="#" className='Brand-flex'>
-                    <img
-                        src={UHSLogo} 
-                        alt="Universal High School"
-                        height="35"
-                    />
-                    <div className='vr'></div>
-                    <img
-                        src={PaceLogo} 
-                        alt="Pace"
-                        height="35"
-                    />
-
-                </Navbar.Brand>
-                <Nav className="ms-auto">
-                    <Button style={{width: '120.44px', height: '54.16px'}}>Get info</Button>
-                </Nav>
-            </Container>
-        </Navbar>
+        <Navbar className="bg-body-tertiary header-navbar">
+      <Container>
+        <Navbar.Brand ><img src={UHSLogo} alt="UHSLogo" /></Navbar.Brand>
+        <div className="navbar-separator"></div>
+        <Navbar.Brand ><img src={PaceLogo} alt="PaceLogo" /></Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            <Button>Get Info</Button>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     )
 }
 
